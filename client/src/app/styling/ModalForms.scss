@@ -1,0 +1,120 @@
+.modal-form{
+    background-color: #efefef;
+    padding: 1.5rem 2rem;
+    border-radius: 15px;
+
+    z-index: 999;
+
+    &__form-cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__form-heading{
+        font-weight: 600;
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+
+    &__form-label{
+        color: #737373;
+        font-size: 0.85rem;
+        padding-bottom: 0.5rem;
+        padding-left: 0.1rem;
+    }
+
+    &__form-group{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+
+    &__text-input{
+        padding: 0.5rem 1rem;
+        background-color: #e4e4e4;
+        border: none;
+        width: 25rem;
+        border-radius: 50px;
+        margin-left: -1px;
+
+        margin-bottom: 0.5rem;
+
+        transition: 0.2s cubic-bezier(.18,.3,.28,.99);
+
+        &:hover{
+            background: #e9edef;
+        }
+
+        &:focus{
+            background: #ffffff;
+            outline: none;
+
+            box-shadow: -3px 4px 11px 0px rgba(0,0,0,0.15);
+        }
+    }
+
+    &__form-dropdown{
+        padding: 0.5rem 1rem;
+        background-color: #e4e4e4;
+        border: none;
+        width: 27rem;
+        border-radius: 50px;
+        margin-left: -1px;
+
+        &:hover{
+            background: #e9edef;
+        }
+
+        &:focus{
+            background: #ffffff;
+            outline: none;
+
+            box-shadow: -3px 4px 11px 0px rgba(0,0,0,0.15);
+        }
+    }
+
+    &__form-checkbox-group{
+        width: 25rem;
+        padding: 0.5rem 1rem;
+        background-color: #e4e4e4;
+        border: none;
+        border-radius: 15px;
+        margin-left: -1px;
+        height: 4rem;
+        overflow-y: scroll;
+    }
+
+    
+    &__btn{
+        margin-top: 2rem;
+        padding: 0.5rem 1rem;
+        background-color: #8006d6;
+        color: #efefef;
+        border: none;
+        width: 9rem;
+        border-radius: 50px;
+
+        font-weight: 200;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        margin-bottom: 0.5rem;
+    }
+
+    &__close-btn{
+        border: none;
+        background: none;
+        color: #b6b6b6;
+        font-size: 0.9rem;
+        font-weight: 100;
+        margin-bottom: 0.5rem;
+
+        &:hover{
+            color: #969696;
+            text-decoration: underline;
+        }
+    }
+
+}

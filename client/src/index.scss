@@ -1,0 +1,23 @@
+@import './app/styling/App.scss';
+@import './app/styling/SideNav.scss';
+@import './app/styling/MockDash.scss';
+@import './app/styling/MockDash.EventCard.scss';
+@import './app/styling/MockDash.HireCard.scss';
+@import './app/styling/Documents.scss';
+@import './app/styling/Hires.scss';
+@import './app/styling/Hires.Accordion.scss';
+@import './app/styling/Hires.Background.scss';
+@import './app/styling/Hires.Event.scss';
+@import './app/styling/Modal.scss';
+@import './app/styling/ModalForms.scss';
+@import './app/styling/_scrollbar.scss';
+@import './app/styling/loading-page.scss';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

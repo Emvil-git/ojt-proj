@@ -1,0 +1,62 @@
+.sidenav{
+    background: linear-gradient(
+        10deg,
+        hsl(203deg 91% 34%) 0%,
+        hsl(203deg 86% 37%) 23%,
+        hsl(203deg 82% 39%) 33%,
+        hsl(203deg 79% 42%) 42%,
+        hsl(203deg 77% 45%) 49%,
+        hsl(203deg 75% 47%) 57%,
+        hsl(203deg 74% 50%) 66%,
+        hsl(203deg 79% 52%) 75%,
+        hsl(203deg 86% 54%) 86%,
+        hsl(202deg 94% 57%) 100%
+      );
+
+    padding: 5rem 0 0 3rem;
+
+    display: flex;
+    flex-direction: column;
+
+    z-index: 1;
+
+    &__header{
+        height: 50px;
+        width: 50px;
+        background: #ffffff;
+        padding-right: 5rem;
+    }
+
+    &__links{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__link{
+        padding: 0.75rem 0;
+        padding-right: 5rem;
+        color: #fff;
+        border-radius: 8px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        padding-left: 1rem;
+        margin-top: 0.25rem;
+
+        outline: none;
+        background: none;
+        border: none;
+        text-align: start;
+
+        transition: 0.15s cubic-bezier(.75,1.4,.83,.67);
+
+        &:hover{
+            background-color: #f9f9f9;
+            color: #0086d6;
+            padding-left: 1.5rem;
+            margin-right: -0.5rem;
+
+            box-shadow: -3px 4px 11px 0px rgba(0,0,0,0.15);
+            
+        }
+    }
+}

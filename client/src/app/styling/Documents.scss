@@ -1,0 +1,137 @@
+.documents{
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+
+    &__header, &__docs-list{
+        margin-left: 4rem;
+    }
+
+    &__header{
+        margin-bottom: 1rem;
+
+        &--title{
+            margin: 0;
+            margin-bottom: 1rem;
+
+            text-transform: uppercase;
+            font-weight: normal;
+            font-size: 1.75rem;
+        }
+    }
+
+    &__actions{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        padding-right: 3rem;
+    }
+
+    &__searchbox{
+        padding: 0.5rem 1rem;
+        background-color: #ebebeb;
+        border: none;
+        width: 25rem;
+        border-radius: 50px;
+        margin-left: -1px;
+
+        transition: 0.2s cubic-bezier(.18,.3,.28,.99);
+
+        &:hover{
+            background: #e9edef;
+        }
+
+        &:focus{
+            background: #ffffff;
+            outline: none;
+
+            box-shadow: -3px 4px 11px 0px rgba(0,0,0,0.15);
+        }
+    }
+
+    &__docs-list{
+
+        &--heading{
+            margin-left: 0;
+            margin-bottom: 1rem;
+            padding: 0 1.25rem;
+            margin-right: 10px;
+            font-size: 0.85rem;
+            color: #9f9f9f;
+            display: grid;
+            grid-template-columns: minmax(0,3.5fr) minmax(0,2fr) minmax(0,2.5fr) minmax(0,2fr) minmax(0,3.5fr);
+    grid-row-gap: 1rem;
+        }
+
+        &--entries{
+            height: 400px !important;
+
+            position: relative;
+            margin-left: 0;
+            overflow-y: scroll;
+
+        }
+
+
+    }
+}
+
+.doc-item{
+    height: 2.5rem;
+    display: grid;
+    grid-template-columns: minmax(0,3.5fr) minmax(0,2fr) minmax(0,2.5fr) minmax(0,2fr) minmax(0,3.5fr);
+    grid-row-gap: 1rem;
+    padding: 0.65rem 1.25rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    border-radius: 5px;
+    background-color: #ebebeb;
+    transition: 0.1s;
+    box-sizing: border-box;
+    color: #4b4b4b;
+    margin-right: 0.5rem;
+
+    &:hover{
+        background-color: #83cbf5;
+        box-shadow: -3px 4px 11px 0px rgba(0,0,0,0.15);
+        color: #212121;
+    }
+
+    &__data-cont, &__data{    
+        margin: 0;
+        display: flex;
+        font-size: 0.85rem;
+        cursor: default;
+    }
+
+    &__hire-icon{
+        height: 24px;
+        width: 24px;
+
+        margin-top: -2px;
+        margin-right: 0.75rem ;
+        margin-left: -2px;
+
+        border-radius: 100%;
+        background-color: #ffffff;
+    }
+
+    &__doc-icon{
+        color: #0086d6;
+        margin-top: 0.1rem;
+        margin-left: 0.5rem;
+    }
+}
+
+.entry{
+    height: 2rem;
+    width: 100%;
+
+    margin-bottom: 0.5rem;
+    position: relative;
+
+    border-radius: 5px;
+    background-color: #e4e4e4;
+}

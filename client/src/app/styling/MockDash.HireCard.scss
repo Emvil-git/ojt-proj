@@ -1,0 +1,62 @@
+.dash-hire{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.25rem;
+    margin: 0 .5rem 0.5rem 0;
+
+    border-radius: 15px;
+
+    &__hire-card-info{
+        display: flex;
+        align-items: center;
+    }
+
+    &__mock-img{
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 100%;
+
+        background: #fff;
+
+        margin-right: 1rem;
+    }
+
+    &__title{
+        font-size: 1rem;
+    }
+
+    &__text-role, &__text-dept{
+        color: #a3a3a3;
+        font-size: 0.85rem;
+    }
+
+    &__text-role{
+        margin-right: 0.5rem;
+    }
+
+    &__text-dept{
+        font-weight: 600;
+    }
+
+    &__hire-indicators{
+        display: flex;
+        justify-content: space-between;
+        width: 4.5rem;
+    }
+
+    &__indicator{
+        &-red{
+            color: #f05353;
+        }
+
+        &-grey{
+            color: #a3a3a3;
+        }
+
+        &-blue{
+            color: #0086d6;
+        }
+    }
+}

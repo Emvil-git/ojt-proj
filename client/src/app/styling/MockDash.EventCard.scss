@@ -1,0 +1,46 @@
+.dash-event{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    margin: 0 .5rem 0.5rem 0;
+
+    background-color: #f9f9f9;
+
+    border-radius: 15px;
+
+    &__title{
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+    }
+
+    &__text-info{
+        color: #a3a3a3;
+        font-size: 0.85rem;
+
+        &--sect{
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+
+            margin-top: 0.5rem;
+
+            color:#828282;
+        }
+
+        &--participant{
+            font-size: 0.75rem;
+            margin-left: 0.5rem;
+        }
+    }
+
+    &__acc-icon{
+        margin-top: 0.2rem;
+    }
+
+    &__part-accordion{
+        display: flex;
+        flex-direction: column;
+
+    }
+}

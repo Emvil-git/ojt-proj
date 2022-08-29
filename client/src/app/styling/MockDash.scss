@@ -1,0 +1,157 @@
+.mockdash{
+    height: 100%;
+    width: 100%;
+
+    box-sizing: border-box;
+
+    &__grid{
+        box-sizing: border-box;
+
+        padding-left: 2rem;
+
+        width: 100%;
+
+        display: grid;
+        grid-template-columns:repeat(2, minmax(0,1.75fr)) minmax(0,2fr) ;
+
+        grid-template-areas:
+        'docs assets events'
+        'hires hires events'
+        'hires hires events'
+        ;
+
+        grid-gap: 1.5rem;
+        padding-bottom: 2rem;
+    }
+
+    &__events{
+        grid-area: events;
+        box-sizing: border-box;
+        background: #e9e9e9;
+        border-radius: 15px;
+        padding: 1rem 2rem;
+    }
+
+    &__hires{
+        grid-area: hires;
+
+        display: flex;
+        flex-direction: column;
+        
+        height: 26rem;
+
+        box-sizing: border-box;
+
+        background: #e9e9e9;
+        border-radius: 15px;
+        padding: 1rem 2rem;
+    }
+
+    &__docs{
+        grid-area: docs;
+        height: 10rem;
+        box-sizing: border-box;
+        background-color: #0086d6;
+        border-radius: 15px;
+
+        display: flex;
+        align-items: center;
+
+        padding: 2rem;
+        color: #fef;
+    }
+    
+    &__assets{
+        grid-area: assets;
+        height: 10rem;
+        box-sizing: border-box;
+        background-color: #0086d6;
+        border-radius: 15px;
+
+        display: flex;
+        align-items: center;
+
+        padding: 2rem;
+        color: #fef;
+    }
+
+    &__sect-icon{
+        font-size: 4rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    &__sect-header{
+        display:flex;
+        height: max-content;
+        justify-content: space-between;
+        align-items: center;
+
+        margin: 1rem 0 1.5rem 0;
+    }
+
+    &__sect-info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__sect-text{
+        font-weight: 200;
+        font-size: 1.25rem;
+        margin-top: -0.25rem;
+        margin-right: 0.5rem;
+    }
+
+    &__sect-value{
+        font-size: 3rem;
+        margin-right: 0.5rem;
+    }
+
+    &__btn-primary{
+        height: 2rem;
+        padding: 0 2rem;
+        background-color: #8006d6;
+        color: #efefef;
+        border: none;
+        border-radius: 50px;
+
+        transition: 0.2s;
+
+        &:hover{
+            background-color: #8a0fe2;
+        }
+    }
+
+    &__card-cont{
+        overflow-y: scroll;
+        height: 30rem;
+    }
+
+    &__hire-cont{
+        overflow-y: scroll;
+        height: 18rem;
+        margin-bottom: 1rem;
+    }
+
+    &__details-link{
+        font-size: 0.85rem;
+        text-align: right;
+        align-self:flex-end ;
+        color: #0086d6;
+        cursor: pointer;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    &__header-text{
+        font-weight: 400;
+        margin: 0;
+    }
+
+    &__header-secondary{
+        font-size: 1.25rem;
+        margin: 0;
+    }
+}

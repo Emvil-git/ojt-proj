@@ -1,0 +1,55 @@
+.app{
+    display: flex;
+    flex-direction: row;
+
+    padding-right: 5rem;
+    
+    height: 100vh;
+    background-color: #f9f9f9;
+
+    box-sizing: border-box;
+
+    &__body{
+        display: flex;
+        flex-direction: column;
+
+        height: 100%;
+        width: 100%;
+
+        z-index: 99;
+        background-color: #f9f9f9;
+    }
+
+    &__header{
+        padding-top: 1rem;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        &--title{
+            padding-top: 0;
+            padding-left: 4rem;
+        }
+
+        &--icons-cont{
+            padding-top: 0;
+            height: 24px;
+            width: 6rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            box-sizing: border-box;
+        }
+
+        &--icon{
+            width: 32px;
+
+            background-color: #f5efa4;
+
+            border-radius: 100%;
+        }
+    }
+}

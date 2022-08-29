@@ -1,0 +1,73 @@
+.hire-bg{
+
+    &__indicator{
+        display: flex;
+        align-items: center;
+        margin-top: 0.1rem
+    }
+
+    &__heading{
+        display: flex;
+        font-size: 0.85rem;
+        margin-bottom: 0.5rem;
+
+        &--title{
+            margin-left: 1rem;
+        }
+    }
+
+    &__contacts{
+        height: 6rem;
+        margin-left:0.5rem;
+        margin-right: 1rem;
+        overflow-y: scroll;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.reference-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+
+    &__indicator{
+        display: flex;
+        align-items: center;
+        margin-right: 0.75rem;
+
+        color: #a4a4a4;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: row;
+        margin-left: 0.75rem;
+    }
+
+    &__details{
+        display: flex;
+        flex-direction: column;
+        color: #646464;
+
+        
+        font-size: 0.75rem;
+    }
+
+    &__actions{
+        margin-right: 1rem;
+        text-align: end;
+        justify-self: flex-end;
+    }
+
+    &__btn{
+        background: none;
+        border: none;
+        color: #a4a4a4;
+
+        &:hover{
+            color: #0086d6
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.app-modal{
+    position: absolute;
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #1212129c;
+    backdrop-filter: blur(7px);
+
+    &__close-btn{
+        position: absolute;
+        z-index: 1000;
+
+        top: 16%;
+        right: 18%;
+
+        height: 1.5rem;
+        width: 1.5rem;
+
+        background: #0087d64d;
+        border: none;
+        border-radius: 100%;
+
+        font-weight: 100;
+        color: #efefef;
+
+        cursor: pointer;
+
+        transition: 0.3s;
+        &:hover{
+            background-color: #0087d67c;
+        }
+    }
+}

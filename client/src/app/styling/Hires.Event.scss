@@ -1,0 +1,22 @@
+.hire-event{
+    display: flex;
+    flex-direction: column;
+
+    background-color: #efefef;
+    padding: 0.5rem 1rem;
+    box-shadow: -3px 4px 11px 0px rgba(0,0,0,0.07);
+    border-radius: 5px;
+
+    margin-bottom: 0.5rem;
+
+    &__title{
+        font-weight: 600;
+        font-size: 0.85rem;
+        margin-bottom: 0.25rem;
+    }
+
+    &__date, &__platform{
+        color: #a3a3a3;
+        font-size: 0.75rem;
+    }
+}
